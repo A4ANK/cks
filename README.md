@@ -35,6 +35,16 @@ sudo -i
 bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/master/worker.sh)
 ```
 
+### Vagrant stop VMs
+
+```
+vagrant halt
+```
+### Vagrant Destroy VMs
+```
+vagrant destroy
+```
+
 ## References:-
 - https://kubernetes.io/docs/home/
 - https://github.com/killer-sh/cks-course-environment/
