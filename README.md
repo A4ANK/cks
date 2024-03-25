@@ -11,16 +11,16 @@ vagrant up
 ```
 
 
-### Manager/Primary/Control-Plane Node:-
+### Manager/Primary/ControlPlane Node:-
 ```
-vagrant ssh master
+vagrant ssh controlplane
 ```
 
 ```
 sudo -i
-bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/master/control-plane.sh)
+bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/main/controlplane.sh)
 ```
-- After complete setup up of master and worker nodes. We can label worker node also.
+- After complete setup up of controlplane and worker nodes. We can label worker node also.
 ```
 kubectl label node worker node-role.kubernetes.io/worker=worker
 ```
@@ -32,7 +32,7 @@ vagrant ssh worker
 
 ```
 sudo -i
-bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/master/worker.sh)
+bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/main/worker.sh)
 ```
 
 ### Vagrant stop VMs

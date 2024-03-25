@@ -176,7 +176,7 @@ mkdir -p ~/.kube
 sudo cp -i /etc/kubernetes/admin.conf ~/.kube/config
 
 ### CNI
-kubectl apply -f https://raw.githubusercontent.com/A4ANK/cks/master/calico.yaml
+kubectl apply -f https://raw.githubusercontent.com/A4ANK/cks/main/calico.yaml
 
 
 # etcdctl
