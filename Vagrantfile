@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
     controlplane.vm.box = "ubuntu/focal64"
     controlplane.vm.hostname = "controlplane"
     controlplane.vm.network "private_network", ip: "192.168.99.102", :adapter => 2, virtualbox__hostonlyif: true
+    controlplane.vm.network 'forwarded_port', guest: 6443, host: 6443
     controlplane.vm.provider "virtualbox" do |vb|
       vb.memory = "2048"
       vb.cpus = "2"
