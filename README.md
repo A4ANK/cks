@@ -1,4 +1,4 @@
-# Set up K8s cluster environment for CKS on Vagrant with VirtualBox locally.
+# Set up a local K8s cluster environment on Vagrant with VirtualBox driver.
 
 ### Setup Vagrant
 - Download and install Vagrant & VirtualBox.
@@ -18,7 +18,7 @@ vagrant ssh controlplane
 
 ```
 sudo -i
-bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/main/controlplane.sh)
+bash <(curl -s https://raw.githubusercontent.com/A4ANK/k8s/main/controlplane.sh)
 ```
 - After complete setup up of controlplane and worker nodes. We can label worker node also.
 ```
@@ -32,7 +32,7 @@ vagrant ssh worker
 
 ```
 sudo -i
-bash <(curl -s https://raw.githubusercontent.com/A4ANK/cks/main/worker.sh)
+bash <(curl -s https://raw.githubusercontent.com/A4ANK/k8s/main/worker.sh)
 ```
 
 ### Vagrant stop VMs
